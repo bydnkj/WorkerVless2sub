@@ -475,8 +475,8 @@ export default {
 		if (env.CMPROXYIPS) 匹配PROXYIP = await 整理(env.CMPROXYIPS);;
 		if (env.CFPORTS) httpsPorts = await 整理(env.CFPORTS);
 		EndPS = env.PS || EndPS;
-		网站图标 = http://uool.cn/favicon.ico ? `<link rel="icon" sizes="32x32" href="http://uool.cn/favicon.ico">` : '';
-		网站头像 = http://uool.cn/13.png ? `<div class="logo-wrapper"><div class="logo-border"></div><img src="http://uool.cn/13.png" alt="Logo"></div>` : '';
+		网站图标 = favicon.ICO ? `<link rel="icon" sizes="32x32" href="http://uool.cn/favicon.ico">` : '';
+		网站头像 = 13.PNG ? `<div class="logo-wrapper"><div class="logo-border"></div><img src="http://uool.cn/13.png" alt="Logo"></div>` : '';
 		if (env.IMG) {
 			const imgs = await 整理(env.IMG);
 			网站背景 = `background-image: url(https://raw.cmliussss.com/img/900x400/00950-877626231-ganyu.png');`;
