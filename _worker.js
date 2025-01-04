@@ -475,12 +475,12 @@ export default {
 		if (env.CMPROXYIPS) 匹配PROXYIP = await 整理(env.CMPROXYIPS);;
 		if (env.CFPORTS) httpsPorts = await 整理(env.CFPORTS);
 		EndPS = env.PS || EndPS;
-		网站图标 = env.ICO ? `<link rel="icon" sizes="32x32" href="http://uool.cn/favicon.ico">` : '';
-		网站头像 = env.PNG ? `<div class="logo-wrapper"><div class="logo-border"></div><img src="http://uool.cn/13.png" alt="Logo"></div>` : '';
+		网站图标 = env.ICO ? `<link rel="icon" sizes="32x32" href="${env.ICO}">` : 'http://uool.cn/favicon.ico';
+		网站头像 = env.PNG ? `<div class="logo-wrapper"><div class="logo-border"></div><img src="${env.PNG}" alt="Logo"></div>` : 'http://uool.cn/13.png';
 		if (env.IMG) {
 			const imgs = await 整理(env.IMG);
-			网站背景 = `background-image: url('${imgs[Math.floor(Math.random() * imgs.length)]}');`;
-		} else 网站背景 = 'https://raw.cmliussss.com/img/900x400/00950-877626231-ganyu.png';
+			网站背景 = `background-image: url(https://raw.cmliussss.com/img/900x400/00950-877626231-ganyu.png');`;
+		} else 网站背景 = '';
 		网络备案 = env.BEIAN || env.BY || 网络备案;
 		const userAgentHeader = request.headers.get('User-Agent');
 		const userAgent = userAgentHeader ? userAgentHeader.toLowerCase() : "null";
