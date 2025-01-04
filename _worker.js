@@ -46,7 +46,7 @@ let 额外ID = '0';
 let 加密方式 = 'auto';
 let 网站图标 = <link rel="icon" sizes="32x32" href="https://raw.cmliussss.com/favicon.ico">
 let 网站头像 = 
-let 网站背景 = <href="https://raw.cmliussss.com/img/900x400/00815-3924935582-masterpiece.png">
+let 网站背景 = 
 async function 整理优选列表(api) {
 	if (!api || api.length === 0) return [];
 
