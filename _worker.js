@@ -44,7 +44,9 @@ let alpn = 'h3';
 let 网络备案 = `<a href='https://t.me/shaoseng'>云逸数字科技</a>`;//写你自己的维护者广告
 let 额外ID = '0';
 let 加密方式 = 'auto';
-let 网站图标, 网站头像, 网站背景;
+let 网站图标 = <link rel="icon" sizes="32x32" href="https://raw.cmliussss.com/favicon.ico">
+let 网站头像 = 
+let 网站背景 = <https://raw.cmliussss.com/img/900x400/00815-3924935582-masterpiece.png">
 async function 整理优选列表(api) {
 	if (!api || api.length === 0) return [];
 
